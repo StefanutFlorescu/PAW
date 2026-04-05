@@ -1,0 +1,32 @@
+﻿    @model CreateArticleViewModel
+
+<h1>Adaugă articol</h1>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="@Model.Title"></label>
+        <input asp-for="@Model.Title" class="form-control" />
+        <span asp-validation-for="@Model.Title" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="@Model.Content"></label>
+        <textarea asp-for="@Model.Content" class="form-control"></textarea>
+        <span asp-validation-for="@Model.Content" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="@Model.CategoryId"></label>
+        <select asp-for="@Model.CategoryId" asp-items="Model.Categories" class="form-control">
+            <option value="">-- Selectați categoria --</option>
+        </select>
+        <span asp-validation-for="@Model.CategoryId" class="text-danger"></span>
+    </div>
+    <div>
+        <label class="form-label">Imagine articol (opțional)</label>
+        <input type="file" name="Upload" class="form-control" accept="image/*" />
+    </div>
+    <button type="submit" class="btn btn-primary">Salvează</button>
+</form>
+
+<a asp-action="Index">← Înapoi la listă</a>

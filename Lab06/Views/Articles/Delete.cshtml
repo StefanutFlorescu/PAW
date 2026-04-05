@@ -1,0 +1,24 @@
+@model ArticleViewModel
+
+<h1>Ștergere articol</h1>
+
+<p>Pentru a confirma ștergerea, introduceți titlul articolului:</p>
+
+<div class="mb-3">
+    <h3>@Model.Title</h3>
+    <p><strong>Categorie:</strong> @Model.CategoryName</p>
+    <p><strong>Data:</strong> @Model.PublishedAt.ToShortDateString()</p>
+    <p>@Model.Content</p>
+</div>
+
+<form asp-action="Delete" asp-route-id="@Model.Id" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="id" value="@Model.Id" />
+    <div class="mb-3">
+        <label class="form-label">Tastați titlul pentru confirmare:</label>
+        <input type="text" name="confirmTitle" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-danger">Confirmă ștergerea</button>
+</form>
+
+<a asp-action="Index">← Înapoi la listă</a>

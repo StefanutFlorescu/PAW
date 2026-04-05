@@ -1,0 +1,57 @@
+﻿@model List<ArticleViewModel>
+
+<div class="row mb-4">
+    <div class="col-12">
+        <h1>Ultimele știri</h1>
+        <p>Articole recente și statistici</p>
+    </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+    @foreach (var article in Model)
+    {
+        <div class="col">
+            <div class="card h-100">
+                @if (article.ImagePath != null)
+                {
+                    <img src="@article.ImagePath" class="card-img-top" alt="@article.Title" style="height:160px;object-fit:cover;" />
+                }
+                <div class="card-body">
+                    <h5 class="card-title">@article.Title</h5>
+                    <p class="card-text">@(article.Content.Length > 120 ? article.Content[..120] + "..." : article.Content)</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">@article.CategoryName — @article.PublishedAt.ToShortDateString()</small>
+                    <div class="mt-2">
+                        <a asp-controller="Articles" asp-action="Details" asp-route-id="@article.Id" class="btn btn-sm btn-outline-primary">Vezi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-4">
+        <div class="card p-3">
+            <h5>Total articole</h5>
+            <p class="display-6">@ViewBag.TotalArticles</p>
+            <a asp-controller="Articles" asp-action="Index">Vezi toate articolele</a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3">
+            <h5>Total categorii</h5>
+            <p class="display-6">@ViewBag.TotalCategories</p>
+            <a asp-controller="Categories" asp-action="Index">Vezi toate categoriile</a>
+        </div>
+    </div>
+</div>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
