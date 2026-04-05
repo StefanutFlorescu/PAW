@@ -38,3 +38,5 @@ public class ArticleController : ControllerBase
 ### 7. Cum ajuta structura pentru:
 - API REST: controller-ele si service-urile pot fi refolosite fara modificari.
 - Aplicatie mobila: aceeasi logica de business, testare si mentenanta mai usoara.
+
+### Link YouTube: https://youtu.be/_i-4_DuwMGs
