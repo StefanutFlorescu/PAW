@@ -25,7 +25,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = "/Auth/Login";
     options.LogoutPath = "/Auth/Logout";
-    options.AccessDeniedPath = "/Auth/Login";
+    options.AccessDeniedPath = "/Auth/AccessDenied";
 });
 
 // Unit of Work

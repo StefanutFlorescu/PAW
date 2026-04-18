@@ -51,8 +51,11 @@
                         @article.CategoryName — @article.PublishedAt.ToShortDateString()
                     </small>
                     <div class="mt-1">
-                        <a asp-action="Edit" asp-route-id="@article.Id">Editează</a> |
-                        <a asp-action="Delete" asp-route-id="@article.Id">Șterge</a>
+                        @if (User.Identity != null && User.Identity.IsAuthenticated)
+                        {
+                            <a asp-action="Edit" asp-route-id="@article.Id" class="btn btn-sm btn-warning">Editare</a>
+                            <a asp-action="Delete" asp-route-id="@article.Id" class="btn btn-sm btn-danger">Ștergere</a>
+                        }
                     </div>
                 </div>
             </div>

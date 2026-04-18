@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Acces interzis";
+}
+
+<div class="container mt-4">
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">403 - Acces interzis</h4>
+        <p>Esti autentificat, dar nu ai dreptul sa accesezi aceasta resursa.</p>
+        <hr />
+        <a asp-controller="Articles" asp-action="Index" class="btn btn-outline-dark">Inapoi la articole</a>
+    </div>
+</div>

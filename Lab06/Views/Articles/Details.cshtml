@@ -13,4 +13,12 @@
 <p><strong>Data publicării:</strong> @Model.PublishedAt.ToShortDateString()</p>
 <p>@Model.Content</p>
 
+@if (User.Identity != null && User.Identity.IsAuthenticated)
+{
+    <div class="mb-3">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editare</a>
+        <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Ștergere</a>
+    </div>
+}
+
 <a asp-action="Index">← Înapoi la listă</a>
