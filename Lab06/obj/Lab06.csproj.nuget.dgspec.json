@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\flore\\source\\repos\\Lab06\\Lab06\\Lab06.csproj": {}
+    "E:\\school\\school\\A3\\WEB\\PAW\\Lab06\\Lab06.csproj": {}
   },
   "projects": {
-    "C:\\Users\\flore\\source\\repos\\Lab06\\Lab06\\Lab06.csproj": {
+    "E:\\school\\school\\A3\\WEB\\PAW\\Lab06\\Lab06.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\flore\\source\\repos\\Lab06\\Lab06\\Lab06.csproj",
+        "projectUniqueName": "E:\\school\\school\\A3\\WEB\\PAW\\Lab06\\Lab06.csproj",
         "projectName": "Lab06",
-        "projectPath": "C:\\Users\\flore\\source\\repos\\Lab06\\Lab06\\Lab06.csproj",
+        "projectPath": "E:\\school\\school\\A3\\WEB\\PAW\\Lab06\\Lab06.csproj",
         "packagesPath": "C:\\Users\\flore\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\flore\\source\\repos\\Lab06\\Lab06\\obj\\",
+        "outputPath": "E:\\school\\school\\A3\\WEB\\PAW\\Lab06\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

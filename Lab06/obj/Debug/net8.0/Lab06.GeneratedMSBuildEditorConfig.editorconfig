@@ -9,77 +9,77 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Lab06
 build_property.RootNamespace = Lab06
-build_property.ProjectDir = C:\Users\flore\source\repos\Lab06\Lab06\
+build_property.ProjectDir = E:\school\school\A3\WEB\PAW\Lab06\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\flore\source\repos\Lab06\Lab06
+build_property.MSBuildProjectDirectory = E:\school\school\A3\WEB\PAW\Lab06
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/Articles/Create.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/Articles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/Articles/Delete.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/Articles/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/Articles/Details.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/Articles/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/Articles/Edit.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/Articles/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/Articles/Index.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/Articles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/Auth/AccessDenied.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/Auth/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/Auth/Login.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/Auth/Register.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/Categories/Index.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/Home/Index.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/Home/Privacy.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/Shared/Error.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/_ViewImports.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/_ViewStart.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flore/source/repos/Lab06/Lab06/Views/Shared/_Layout.cshtml]
+[E:/school/school/A3/WEB/PAW/Lab06/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jfqbn2z2lz

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uLksejhS6SA=",
+  "dgSpecHash": "Sacj3vZ9xRk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\flore\\source\\repos\\Lab06\\Lab06\\Lab06.csproj",
+  "projectFilePath": "E:\\school\\school\\A3\\WEB\\PAW\\Lab06\\Lab06.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\flore\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\flore\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
