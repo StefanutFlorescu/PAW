@@ -1,15 +1,49 @@
 using Lab06.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Lab06.Data;
 
 public static class SeedData
 {
-    public static void Initialize(AppDbContext context)
+    public static async Task InitializeAsync(IServiceProvider serviceProvider)
     {
+        var context = serviceProvider.GetRequiredService<AppDbContext>();
+        var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+        var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+
         context.Database.Migrate();
 
-        if (context.Categories.Any() || context.Articles.Any())
+        // Seed roles first.
+        string[] roleNames = ["Admin", "User"];
+        foreach (var roleName in roleNames)
+        {
+            if (!await roleManager.RoleExistsAsync(roleName))
+            {
+                await roleManager.CreateAsync(new IdentityRole(roleName));
+            }
+        }
+
+        // Seed admin user.
+        var adminEmail = "admin@newsportal.com";
+        if (await userManager.FindByEmailAsync(adminEmail) == null)
+        {
+            var admin = new ApplicationUser
+            {
+                UserName = "admin",
+                Email = adminEmail,
+                FullName = "Administrator",
+                EmailConfirmed = true
+            };
+
+            var result = await userManager.CreateAsync(admin, "Admin@123");
+            if (result.Succeeded)
+            {
+                await userManager.AddToRoleAsync(admin, "Admin");
+            }
+        }
+
+        if (await context.Categories.AnyAsync() || await context.Articles.AnyAsync())
         {
             return;
         }
@@ -20,7 +54,7 @@ public static class SeedData
         var actualitate = new Category { Name = "Actualitate" };
 
         context.Categories.AddRange(technology, sport, culture, actualitate);
-        context.SaveChanges();
+        await context.SaveChangesAsync();
 
         context.Articles.AddRange(
             // Tehnologie
@@ -126,6 +160,6 @@ public static class SeedData
             }
         );
 
-        context.SaveChanges();
+        await context.SaveChangesAsync();
     }
 }

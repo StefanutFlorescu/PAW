@@ -10,18 +10,15 @@ public class ArticlesController : Controller
 {
     private readonly IArticleService _articleService;
     private readonly ICategoryService _categoryService;
-    private readonly IUserService _userService;
     private readonly IWebHostEnvironment _env;
 
     public ArticlesController(
         IArticleService articleService,
         ICategoryService categoryService,
-        IUserService userService,
         IWebHostEnvironment env)
     {
         _articleService = articleService;
         _categoryService = categoryService;
-        _userService = userService;
         _env = env;
     }
 
@@ -41,7 +38,7 @@ public class ArticlesController : Controller
             Content = a.Content,
             PublishedAt = a.PublishedAt,
             CategoryName = a.Category?.Name ?? "N/A",
-            AuthorName = a.User?.Name ?? "N/A",
+            AuthorName = a.Author?.FullName ?? "N/A",
             ImagePath = a.ImagePath
         }).ToList();
 
@@ -72,7 +69,7 @@ public class ArticlesController : Controller
             Content = article.Content,
             PublishedAt = article.PublishedAt,
             CategoryName = article.Category?.Name ?? "N/A",
-            AuthorName = article.User?.Name ?? "N/A",
+            AuthorName = article.Author?.FullName ?? "N/A",
             ImagePath = article.ImagePath
         };
 
@@ -102,8 +99,7 @@ public class ArticlesController : Controller
         {
             Title = viewModel.Title,
             Content = viewModel.Content,
-            CategoryId = viewModel.CategoryId,
-            UserId = viewModel.UserId
+            CategoryId = viewModel.CategoryId
         };
 
         if (viewModel.Upload != null)
@@ -135,7 +131,6 @@ public class ArticlesController : Controller
             Title = article.Title,
             Content = article.Content,
             CategoryId = article.CategoryId,
-            UserId = article.UserId,
             ExistingImagePath = article.ImagePath
         };
 
@@ -164,7 +159,6 @@ public class ArticlesController : Controller
         article.Title = viewModel.Title;
         article.Content = viewModel.Content;
         article.CategoryId = viewModel.CategoryId;
-        article.UserId = viewModel.UserId;
 
         if (viewModel.Upload != null)
         {
@@ -200,7 +194,7 @@ public class ArticlesController : Controller
             Content = article.Content,
             PublishedAt = article.PublishedAt,
             CategoryName = article.Category?.Name ?? "N/A",
-            AuthorName = article.User?.Name ?? "N/A"
+            AuthorName = article.Author?.FullName ?? "N/A"
         };
 
         return View(viewModel);
@@ -220,11 +214,6 @@ public class ArticlesController : Controller
         var categories = await _categoryService.GetAllAsync(cancellationToken);
         viewModel.Categories = categories
             .Select(c => new SelectListItem { Value = c.Id.ToString(), Text = c.Name })
-            .ToList();
-
-        var users = await _userService.GetAllAsync(cancellationToken);
-        viewModel.Users = users
-            .Select(u => new SelectListItem { Value = u.Id.ToString(), Text = u.Name })
             .ToList();
     }
 }

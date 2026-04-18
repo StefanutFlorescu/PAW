@@ -35,7 +35,7 @@ namespace Lab06.Controllers
                 Content = a.Content,
                 PublishedAt = a.PublishedAt,
                 CategoryName = a.Category?.Name ?? "N/A",
-                AuthorName = a.User?.Name ?? "N/A",
+                AuthorName = a.Author?.FullName ?? "N/A",
                 ImagePath = a.ImagePath
             }).ToList();
 
