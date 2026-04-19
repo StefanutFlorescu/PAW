@@ -53,6 +53,8 @@ Ar fi trebuit sa scriem noi, de la zero:
 - Pentru API-uri (mobile/Angular) ai nevoie de configurari suplimentare (de obicei JWT/OAuth), deoarece flow-ul default e orientat pe cookie + pagini MVC.
 - Pentru proiecte mici poate parea mai complex decat o solutie custom minimala.
 
+## Link Youtube : https://youtu.be/APAmaTVZxOg
+
 # Lab 6
 ### 1. De ce folosim Repository Pattern?
 - Separa accesul la date de restul aplicatiei.
